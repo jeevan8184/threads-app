@@ -1,0 +1,55 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.flex-start {
+  @apply flex justify-start items-start
+}
+
+.flex-center {
+  @apply flex justify-center items-center
+}
+
+.flex-end {
+  @apply flex justify-end items-center
+}
+
+.flex-between {
+  @apply flex justify-between items-center
+}
+
+.main-container {
+  @apply flex flex-col h-full w-full
+}
+
+.topbar {
+  @apply fixed z-30 top-0 w-full flex justify-between items-center bg-[#374151] px-6 py-3 
+}
+
+.leftsidebar {
+  @apply block max-md:hidden sticky top-0 left-0 min-h-screen text-white pt-20 pb-5 pl-2 pr-10 h-screen border-r-dark-4 bg-dark-2
+
+}
+
+.bottombar {
+  @apply md:hidden flex flex-row gap-4 bg-glassmorphism backdrop-blur-lg fixed bottom-0 w-full px-6 z-10 rounded-t-3xl max-sm:py-2
+  
+}
+
+.rightsidebar {
+  @apply max-xl:hidden pt-20
+}
+
+.form_img {
+  @apply flex h-24 w-24 items-center justify-center rounded-full bg-dark-4 !important;
+}
+
+.input_img {
+  @apply cursor-pointer border-none bg-transparent outline-none file:text-blue-500 !important;
+}
+
+.tab {
+  @apply w-full flex min-h-[50px] flex-center bg-dark-4 gap-1  data-[state=active]:bg-[#0e0e12] data-[state=active]:text-light-2
+}
