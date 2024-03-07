@@ -68,7 +68,7 @@ export async function fetchUserPosts(accountId:string) {
                 model:Thread,
                 populate:[
                     {
-                        path:'communities',
+                        path:'community',
                         model:Community,
                         select:'_id id name image'
                     },
